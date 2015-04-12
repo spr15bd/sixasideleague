@@ -13,7 +13,7 @@
 	<div id="pageContent">
 		<?php 
 		// Connect to the MySQL database
-		include "leagueStandingsScripts/connect_to_mysql.php";
+		include "scripts/connect_to_mysql.php";
 		// Grab the result list ready for viewing
 
 		$sql = mysqli_query($connection, "SELECT * FROM result ORDER BY match_date desc LIMIT 10");

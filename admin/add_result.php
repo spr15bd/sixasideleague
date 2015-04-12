@@ -18,7 +18,7 @@ $manager = preg_replace('#[^A-Za-z0-9]#i', '', $_SESSION["manager"]);	//filter e
 $password = preg_replace('#[^A-Za-z0-9]#i', '', $_SESSION["password"]);	//filter everything but numbers and letters
 // Run MySQL query to be sure that this person is an admin and that their password session var equals the database information
 // Connect to the MySQL database
-include "../leagueStandingsScripts/connect_to_mysql.php";
+include "../scripts/connect_to_mysql.php";
 $sql = mysqli_query($connection, "SELECT * FROM admin WHERE id='$managerID' AND username='$manager' AND password='$password' LIMIT 1");	//query the database
 // ............ MAKE SURE PERSON EXISTS IN THE DATABASE ...................
 $existCount = mysqli_num_rows($sql);	// Count the number of rows

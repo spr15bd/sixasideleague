@@ -13,7 +13,7 @@
 	<div id="pageContent">
 		<?php 
 		// Connect to the MySQL database
-		include "leagueStandingsScripts/connect_to_mysql.php";
+		include "scripts/connect_to_mysql.php";
 		// Grab the result list ready for viewing
 
 		$sql = mysqli_query($connection, "SELECT player AS Player, team AS Team, COUNT(event) AS Goals FROM matchevent WHERE event=\"goal\" OR event=\"goal (pen)\" GROUP BY player 

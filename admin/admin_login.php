@@ -12,7 +12,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 	$manager = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["username"]);	//filter everything but numbers and letters
 	$password = preg_replace('#[^A-Za-z0-9]#i', '', $_POST["password"]);	//filter everything but numbers and letters
 	// Connect to the MySQL database
-	include "../leagueStandingsScripts/connect_to_mysql.php";
+	include "../scripts/connect_to_mysql.php";
 	$sql = mysqli_query($connection, "SELECT id FROM admin WHERE username='$manager' AND  password='$password' LIMIT 1") or die(mysql_error());  ;//query the person
 	// ............ MAKE SURE PERSON EXISTS IN THE DATABASE ...................
 	$existCount = mysqli_num_rows($sql);	// Count the number of rows

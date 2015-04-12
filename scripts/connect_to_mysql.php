@@ -1,13 +1,15 @@
 ﻿<?php
-$db_host = "localhost";
+$db_host = getenv('OPENSHIFT_MYSQL_DB_HOST');
 
-$db_username = "root";
+$db_port = getenv('OPENSHIFT_MYSQL_DB_PORT');
 
-$db_pass= "parachute";
+$db_username = getenv('OPENSHIFT_MYSQL_DB_USERNAME');
 
-$db_name = "bd2772";
+$db_pass= getenv('OPENSHIFT_MYSQL_DB_PASSWORD');
 
-$connection  = mysqli_connect("$db_host","$db_username", "$db_pass") or die ("Could not connect to mysql");
+$db_name = getenv('OPENSHIFT_GEAR_NAME');
+
+$connection  = mysqli_connect("$db_host","$db_username", "$db_pass", "", $db_port) or die ("Could not connect to mysql");
 mysqli_select_db($connection,"$db_name") or die ("No database");
 
 ?>
