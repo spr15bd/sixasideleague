@@ -1,0 +1,47 @@
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFF;
+	
+}
+
+body {
+	
+
+}
+a {
+	font-size: 14px;
+	
+}
+a: visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFF;
+}
+a: hover {
+	text-decoration: none;
+	color: #FFF;
+}
+a: active {
+	text-decoration: none;
+	
+}
+#pageHeader {
+	background-color: #000;
+	
+}
+#pageHeader a {
+	color: #FFF;
+}
+#pageContent {
+	color: #FFF;
+	background-color: #0F0;
+}
+#pageFooter {
+	color: #000;
+	background-color: #0F0;
+	
+}
+#pageFooter a {
+	color: #000;
+}
