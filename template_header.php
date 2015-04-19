@@ -7,7 +7,7 @@
 					<a href="http://sixasideleague-spr15bd.rhcloud.com/latest_results.php">Latest Results</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					<a href="http://sixasideleague-spr15bd.rhcloud.com/all_results.php">All Results</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					<a href="http://sixasideleague-spr15bd.rhcloud.com/table.php">Current Table</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-					<a href="http://sixasideleague-spr15bd.rhcloud.com/highest_scorers.php">Highest Scorers</a>
+					<a href="http://sixasideleague-spr15bd.rhcloud.com/highest_scorers.php">Highest Scorers</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 					<a href="http://sixasideleague-spr15bd.rhcloud.com/next_fixtures.php">Next Fixtures</a>
 				</td>
 			</tr>
