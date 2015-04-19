@@ -4,13 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Current Table</title>
 <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
-
 </head>
-
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
 	<div id="pageContent">
+		<table align=center width=40% height=540><tr valign=top height=50><td colspan=9 align=center><h1>Table</h1></td></tr><tr><td height=30></td></tr>
 		<?php 
 		// Connect to the MySQL database
 		include "scripts/connect_to_mysql.php";
@@ -18,10 +17,8 @@
 
 		$sql = mysqli_query($connection, "SELECT * FROM leaguetable ORDER BY points DESC");
 		$resultCount = mysqli_num_rows($sql);	//count the number of records (teams with stats to display)
-		echo "<br><br>";
-		echo "<table>";
 		echo "<tr>";
-		echo "<td></td><td>P</td><td>W</td><td>D</td><td>L</td><td>F</td><td>A</td><td>GD</td><td>P</td>";
+		echo "<td height=15></td><td>P</td><td>W</td><td>D</td><td>L</td><td>F</td><td>A</td><td>GD</td><td>P</td>";
 		echo "</tr>";
 		if ($resultCount > 0) {
 			while ($row = mysqli_fetch_array($sql)) {
@@ -38,11 +35,12 @@
 				echo "</tr>";
 			}
 		} else {
-			echo "There are not yet any results";
+			echo "<tr><td align=center>There are not yet any results</td></tr>";
 		}
+		echo "<tr><td height=15%></td></tr>";
 		echo "</table>";
 		?>
-
+		
 	</div>
 	<?php include_once("template_footer.php");?>
 </div>

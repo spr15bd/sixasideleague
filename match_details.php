@@ -4,13 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Match Details</title>
 <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
-
 </head>
-
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
 	<div id="pageContent">
+		<table align=center width=25% height=540><tr valign=top height=50><td align=center colspan=4><h1>Match Summary</h1></td></tr><tr><td height=30 colspan=4></td></tr>
 		<?php 
 		// Connect to the MySQL database
 		include "scripts/connect_to_mysql.php";
@@ -20,31 +19,33 @@
 		$sql2 = mysqli_query($connection, "SELECT * FROM result WHERE id=".$_GET["matchid"]);
 		$resultCount = mysqli_num_rows($sql);	//count the number of records (events occurring in the match)
 		$resultCount2 = mysqli_num_rows($sql2);
-
-		echo "<br>";
-
 		if ($resultCount2 > 0) {
 			while ($row = mysqli_fetch_array($sql2)) {
+				echo "<tr><td colspan=4 align=center>";
 				echo "<h3>".$row["home_team"]."  ".$row["home_goals"]." ".$row["away_team"]." ".$row["away_goals"]."</h3>";
+				echo "</td></tr>";
+				echo "<tr><td colspan=4 align=center>";
 				echo "<h3>".$row["match_date"]."</h3>";
+				echo "</td></tr>";
 			}
 		}
-		echo "<table>";
 		if ($resultCount > 0) {
 			while ($row = mysqli_fetch_array($sql)) {
 				echo "<tr>";
-				echo "<td>".$row["minutes"]."</td>";
-				echo "<td>".$row["event"]."</td>";
-				echo "<td>".$row["player"]."</td>";
-				echo "<td>".$row["team"]."</td>";
+				echo "<td align=center>".$row["minutes"]."</td>";
+				echo "<td align=center>".$row["event"]."</td>";
+				echo "<td align=center>".$row["player"]."</td>";
+				echo "<td align=center>".$row["team"]."</td>";
 				echo "</tr>";
 			}
 		} else {
-			echo "There were no events during this match.";
+			echo "<tr><td align=center>There were no events during this match.</td></tr>";
 		}
-		echo "</table>";
-		echo "<br></br><a href=".$_GET["frompage"].">Back</a>";
+		echo "<tr><td colspan=4 height=5%></td></tr>";
+		echo "<tr><td colspan=4 align=center><a href=".$_GET["frompage"].">Back</a></td></tr>";
+		echo "<tr><td height=30%></td></tr>";
 		?>
+		</table>
 	</div>
 	<?php include_once("template_footer.php");?>
 </div>

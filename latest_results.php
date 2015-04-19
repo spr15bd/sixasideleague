@@ -4,13 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Latest Results</title>
 <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
-
 </head>
-
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
 	<div id="pageContent">
+		<table align=center width=60% height=540><tr valign=top height=50><td colspan=7 align=center><h1>Latest Results</h1></td></tr><tr><td height=30></td></tr>
 		<?php 
 		// Connect to the MySQL database
 		include "scripts/connect_to_mysql.php";
@@ -18,12 +17,10 @@
 
 		$sql = mysqli_query($connection, "SELECT * FROM result ORDER BY match_date desc LIMIT 10");
 		$resultCount = mysqli_num_rows($sql);	//count the number of records (results)
-		echo "<br><br>";
-		echo "<table>";
 		if ($resultCount > 0) {
 			while ($row = mysqli_fetch_array($sql)) {
 				echo "<tr>";
-				echo "<td><a href=\"match_stats.php?frompage=latest_results.php&matchid=".$row["id"]."\">Match Stats</a></td>";
+				echo "<td height=15><a href=\"match_stats.php?frompage=latest_results.php&matchid=".$row["id"]."\">Match Stats</a></td>";
 				echo "<td>".$row["home_team"]."</td>";
 				echo "<td>".$row["home_goals"]."</td>";
 				echo "<td>".$row["away_team"]."</td>";
@@ -33,10 +30,12 @@
 				echo "</tr>";
 			}
 		} else {
-			echo "There are not yet any results";
+			echo "<tr><td align=center>There are not yet any results</td></tr>";
 		}
-		echo "</table>";
+		
 		?>
+		<tr><td></td></tr>
+		</table>
 	</div>
 	<?php include_once("template_footer.php");?>
 </div>

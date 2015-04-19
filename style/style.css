@@ -1,8 +1,8 @@
 body,td,th {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	color: #FFF;
-	
+	color: #070;
+	font-weight: bold;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 a {
 	font-size: 14px;
-	
+	color:#F00;
 }
 a: visited {
 	font-weight: bold;
@@ -32,10 +32,13 @@ a: active {
 }
 #pageHeader a {
 	color: #FFF;
+	
 }
 #pageContent {
 	color: #FFF;
-	background-color: #0F0;
+	background-color: #070;
+	background-image: url("../images/goal.jpg");
+	background-size: 100%;
 }
 #pageFooter {
 	color: #000;

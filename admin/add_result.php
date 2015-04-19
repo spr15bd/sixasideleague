@@ -1,10 +1,7 @@
 <?php
 
-
 error_reporting(E_ALL);
 ini_set( 'display_errors',true); 
-
-
 
 session_start();
 if (!isset($_SESSION["manager"])) {
@@ -141,17 +138,14 @@ if (isset($_POST["home_team"]) && isset($_POST["home_goals"]) && isset($_POST["a
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Add New Result</title>
 <link rel="stylesheet" href="../style/style.css" type="text/css" media="screen" />
-
 </head>
-
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("../template_header.php");?>
 	<div id="pageContent" align="left">
-		<br/>
-		<center><h2>Enter the new result here</h2></center>
 		<form id="form1" name="form1" method="post" action="add_result.php">
-		<table width="90%" align="center"><tr>
+		<table align=center width=90% height=540><tr valign=top><td align=center colspan=16><h2>Enter the new result here</h2></td></tr>
+		<tr>
 		<td>Home team</td><td><input name="home_team" type="text" id="home_team" size="10" /></td>
 		
 		<td>Home goals</td><td><input name="home_goals" type="text" id="home_goals" size="1" /></td>
@@ -194,7 +188,6 @@ if (isset($_POST["home_team"]) && isset($_POST["home_goals"]) && isset($_POST["a
 		<td colspan="10" align="right"><input name="submit" type="submit"  value="Add result" /></td>
 		</tr>
 		
-		<tr><td></td></tr>
 		<tr><td colspan=16><center><h2>(Optional) - Enter match events here</h2></center></td><tr>
 		<?php
 		for ($i = 0; $i < ($max_events/2); $i++) {		//2 events per row so divide the max possible by 2 here
@@ -213,8 +206,7 @@ if (isset($_POST["home_team"]) && isset($_POST["home_goals"]) && isset($_POST["a
 		
 		</table>
 		</form>
-		<br />
-	<br />
+		
 	</div>
 	<?php include_once("../template_footer.php");?>
 </div>

@@ -6,21 +6,19 @@
 <link rel="stylesheet" href="style/style.css" type="text/css" media="screen" />
 
 </head>
-
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
 	<div id="pageContent">
+		<table align=center width=40% height=540><tr valign=top height=50><td colspan=3 align=center><h1>Highest Scorers</h1></td></tr><tr><td height=30></td></tr>
 		<?php 
 		// Connect to the MySQL database
 		include "scripts/connect_to_mysql.php";
 		// Grab the result list ready for viewing
 
 		$sql = mysqli_query($connection, "SELECT player AS Player, team AS Team, COUNT(event) AS Goals FROM matchevent WHERE event=\"goal\" OR event=\"goal (pen)\" GROUP BY player 
-ORDER BY COUNT(event) desc LIMIT 30");
+ORDER BY COUNT(event) desc LIMIT 18");
 		$resultCount = mysqli_num_rows($sql);	//count the number of records
-		echo "<br><br>";
-		echo "<table>";
 		if ($resultCount > 0) {
 			while ($row = mysqli_fetch_array($sql)) {
 				echo "<tr>";
@@ -32,6 +30,7 @@ ORDER BY COUNT(event) desc LIMIT 30");
 		} else {
 			echo "No goals yet to display.";
 		}
+		echo "<tr><td height=30></td></tr>";
 		echo "</table>";
 		?>
 	</div>

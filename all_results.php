@@ -11,6 +11,7 @@
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
 	<div id="pageContent">
+		<table align=center width=60%><tr valign=top height=50><td colspan=7 align=center><h1>All Results</h1></td></tr><tr><td height=30></td></tr>
 		<?php 
 		// Connect to the MySQL database
 		include "scripts/connect_to_mysql.php";
@@ -18,8 +19,6 @@
 
 		$sql = mysqli_query($connection, "SELECT * FROM result ORDER BY match_date");
 		$resultCount = mysqli_num_rows($sql);	//count the number of records (results)
-		echo "<br><br>";
-		echo "<table>";
 		if ($resultCount > 0) {
 			while ($row = mysqli_fetch_array($sql)) {
 				echo "<tr>";
@@ -33,7 +32,7 @@
 				echo "</tr>";
 			}
 		} else {
-			echo "There are not yet any results";
+			echo "<tr><td align=center>There are not yet any results</td></tr>";
 		}
 		echo "</table>";
 		?>

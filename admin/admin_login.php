@@ -43,23 +43,28 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 <link rel="stylesheet" href="../style/style.css" type="text/css" media="screen" />
 
 </head>
-
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("../template_header.php");?>
-	<div id="pageContent"><br />
-		<h2>Please log in to make changes to the league.</h2>
+	<div id="pageContent">
 		<form id="form1" name="form1" method="post" action="admin_login.php?destination=<?php echo $_GET['destination']; ?>">
-		User Name<br />
+		<table align=center width=40% height=540><tr valign=top height=50><td align=center colspan=3><h2>Please log in to make changes to the league.</h2></td></tr><tr><td height=30></td></tr>
+		
+		<tr><td align=center>
+		User Name&nbsp&nbsp
 		<input name="username" type="text" id="username" size="40" />
-		<br /><br />
-		Password<br />
+		</td></tr>
+		<tr><td align=center>
+		Password&nbsp&nbsp
 		<input name="password" type="text" id="password" size="40" />
-		<br /><br />
+		</td></tr>
+		<tr><td align=center>
 		<input name="submit" type="submit"  value="Log In" />
+		</td></tr>
+		<tr><td height=50%></td></tr>
+		</table>
 		</form>
-		<br /><br />
-	<br />
+		
 	</div>
 	<?php include_once("../template_footer.php");?>
 </div>
