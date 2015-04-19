@@ -9,7 +9,7 @@
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
 	<div id="pageContent">
-		<table align=center width=40% height=540><tr valign=top height=50><td align=center colspan=4><h1>Match Summary</h1></td></tr><tr><td height=30 colspan=4></td></tr>
+		<table align=center width=33% height=540><tr valign=top height=50><td align=center colspan=4><h1>Match Summary</h1></td></tr><tr><td height=30 colspan=4></td></tr>
 		<?php 
 		// Connect to the MySQL database
 		include "scripts/connect_to_mysql.php";
