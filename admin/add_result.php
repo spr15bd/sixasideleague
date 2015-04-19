@@ -26,7 +26,7 @@ if ($existCount == 0) {
 } 
 
 
-$max_events = 22;	//declare the maximum possible events per match; 22 is enough for a 50 minute match
+$max_events = 20;	//declare the maximum possible events per match; 22 is enough for a 50 minute match
 
 ?>
 <?php
