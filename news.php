@@ -10,10 +10,6 @@
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
-	<div id="pageContent">
-	<body>
-<div align="center" id="mainWrapper">
-	<?php include_once("template_header.php");?>
 	<div id="pageContent"><table align=center width=90% height=540>
 		<tr valign=top><td align=center colspan=2><h1>Latest News</h1></td></tr>
 		<tr><td width=50%>NEW TREASURER<p>
