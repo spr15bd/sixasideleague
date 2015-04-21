@@ -47,11 +47,17 @@ a: active {
 }
 #pageContent {
 	color: #FFF;
-	background-color: #000;
+	background-color: #FFF;
 	background-image: url("../images/goal.jpg");
 	background-size: 100%;
 	
 	height: 85.5%;
+}
+#pageContentAllResults {
+	color: #FFF;
+	background-color: #FFF;
+	background-image: url("../images/goal.jpg");
+	background-size: 100%;
 }
 
 #mainWrapper {
@@ -60,9 +66,7 @@ a: active {
 #pageFooter {
 	color: #000;
 	background-color: #0F0;
-	height: 20;
-
-	
+	height: 20;	
 }
 
 
