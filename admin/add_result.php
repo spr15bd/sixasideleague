@@ -144,7 +144,7 @@ if (isset($_POST["home_team"]) && isset($_POST["home_goals"]) && isset($_POST["a
 	<?php include_once("../template_header.php");?>
 	<div id="pageContent" align="left">
 		<form id="form1" name="form1" method="post" action="add_result.php">
-		<table align=center width=90% height=540><tr valign=top><td align=center colspan=16><h2>Enter the new result here</h2></td></tr>
+		<table align=center width=90%><tr valign=top><td align=center colspan=16><h2>Enter the new result here</h2></td></tr>
 		<tr>
 		<td>Home team</td><td><input name="home_team" type="text" id="home_team" size="10" /></td>
 		

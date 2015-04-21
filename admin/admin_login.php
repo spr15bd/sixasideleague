@@ -48,7 +48,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
 	<?php include_once("../template_header.php");?>
 	<div id="pageContent">
 		<form id="form1" name="form1" method="post" action="admin_login.php?destination=<?php echo $_GET['destination']; ?>">
-		<table align=center width=40% height=540><tr valign=top height=50><td align=center colspan=3><h2>Please log in to make changes to the league.</h2></td></tr><tr><td height=30></td></tr>
+		<table align=center width=40%><tr valign=top height=50><td align=center colspan=3><h2>Please log in to make changes to the league.</h2></td></tr><tr><td height=30></td></tr>
 		
 		<tr><td align=center>
 		User Name&nbsp&nbsp

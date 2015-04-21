@@ -97,7 +97,7 @@ if (!empty($_GET["delete_id"])) {
 <div align="center" id="mainWrapper">
 	<?php include_once("../template_header.php");?>
 	<div id="pageContent">
-		<table align=center height=540><tr valign=top height=50><td align=center colspan=6><h2>Choose the result to delete</h2></td></tr><tr><td height=30></td></tr>
+		<table align=center><tr valign=top height=50><td align=center colspan=6><h2>Choose the result to delete</h2></td></tr><tr><td height=30></td></tr>
 		<?php 
 		
 		// Grab the result list ready for viewing

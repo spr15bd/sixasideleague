@@ -10,7 +10,7 @@
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
 	<div id="pageContent">
-		<table align=center width=40% height=540><tr valign=top height=50><td colspan=3 align=center><h1>Highest Scorers</h1></td></tr><tr><td height=30></td></tr>
+		<table align=center width=40%><tr valign=top height=50><td colspan=3 align=center><h1>Highest Scorers</h1></td></tr><tr><td height=30></td></tr>
 		<?php 
 		// Connect to the MySQL database
 		include "scripts/connect_to_mysql.php";

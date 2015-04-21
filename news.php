@@ -10,7 +10,7 @@
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
-	<div id="pageContent"><table align=center width=90% height=540>
+	<div id="pageContent"><table align=center width=90%>
 		<tr valign=top><td align=center colspan=2><h1>Latest News</h1></td></tr>
 		<tr><td width=50%>NEW TREASURER<p>
 		A warm welcome to John Isaacs, who will become the NW Yorks Six A Side Treasurer on 1st January.<p>
