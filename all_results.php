@@ -34,6 +34,7 @@
 		} else {
 			echo "<tr><td align=center>There are not yet any results</td></tr>";
 		}
+		echo "<tr><td height=100></td></tr>";
 		echo "</table>";
 		?>
 	</div>
