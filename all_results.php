@@ -27,7 +27,7 @@
 				echo "<td>".$row["home_goals"]."</td>";
 				echo "<td>".$row["away_team"]."</td>";
 				echo "<td>".$row["away_goals"]."</td>";
-				echo "<td>".$row["match_date"]."</td>";
+				echo "<td align=center>".$row["match_date"]."</td>";
 				echo "<td><a href=\"match_details.php?frompage=all_results.php&matchid=".$row["id"]."\">Match Summary</a></td>";
 				echo "</tr>";
 			}
