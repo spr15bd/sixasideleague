@@ -12,14 +12,14 @@
 	<?php include_once("template_header.php");?>
 	<div id="pageContent">
 		<table align=center width=60%><tr valign=top height=50><td colspan=6 align=center><h1>Next Fixtures</h1></td></tr><tr><td height=30></td></tr>
-			<tr><td height=15>Rawdon</td><td>vs</td><td>Menston Argyle</td><td align=right>13.30pm<td width=5></td><td>23rd Nov 2014</td><tr>
-			<tr><td height=15>Greenbanks Utd</td><td>vs</td><td>Yeadon</td><td align=right>13.00pm<td width=5></td><td>23rd Nov 2014</td><tr>
-			<tr><td height=15>Rodley Lane</td><td>vs</td><td>Otley Town</td><td align=right>13.30pm<td width=5></td><td>23rd Nov 2014</td><tr>		
-			<tr><td height=15>Springwood Forest</td><td>vs</td><td>East Morton</td><td align=right>12.30pm<td width=5></td><td>23rd Nov 2014</td><tr>	
-			<tr><td height=15>Baildon</td><td>vs</td><td>Bingley</td><td align=right>12.30pm<td width=5></td><td>23rd Nov 2014</td><tr>
-			<tr><td height=15>Shadwell</td><td>vs</td><td>Headingley</td><td align=right>13.30pm<td width=5></td><td>23rd Nov 2014</td><tr>
-			<tr><td height=15>Arthington Wanderers</td><td>vs</td><td>Harewood</td><td align=right>13.30pm<td width=5></td><td>23rd Nov 2014</td><tr>
-			<tr><td height=15>Calverley</td><td>vs</td><td>Bardsey</td><td align=right>13.00pm<td width=5></td><td>23rd Nov 2014</td><tr>
+			<tr><td height=15>Rawdon</td><td>vs</td><td>Menston Argyle</td><td align=right>13.30pm<td width=5></td><td>Sunday</td><tr>
+			<tr><td height=15>Greenbanks Utd</td><td>vs</td><td>Yeadon</td><td align=right>13.00pm<td width=5></td><td>Sunday</td><tr>
+			<tr><td height=15>Rodley Lane</td><td>vs</td><td>Otley Town</td><td align=right>13.30pm<td width=5></td><td>Sunday</td><tr>		
+			<tr><td height=15>Springwood Forest</td><td>vs</td><td>East Morton</td><td align=right>12.30pm<td width=5></td><td>Sunday</td><tr>	
+			<tr><td height=15>Baildon</td><td>vs</td><td>Bingley</td><td align=right>12.30pm<td width=5></td><td>Sunday</td><tr>
+			<tr><td height=15>Shadwell</td><td>vs</td><td>Headingley</td><td align=right>13.30pm<td width=5></td><td>Sunday</td><tr>
+			<tr><td height=15>Arthington Wanderers</td><td>vs</td><td>Harewood</td><td align=right>13.30pm<td width=5></td><td>Sunday</td><tr>
+			<tr><td height=15>Calverley</td><td>vs</td><td>Bardsey</td><td align=right>13.00pm<td width=5></td><td>Sunday</td><tr>
 			<tr><td></td></tr>
 		</table>
 	</div>
