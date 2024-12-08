@@ -9,11 +9,22 @@
 <body>
 <div align="center" id="mainWrapper">
 	<?php include_once("template_header.php");?>
-	<div id="pageContent"><table align=center width=80%>
-		<tr><td align=center valign=top><h1>Welcome to the North-West Yorks Six A Side League Website</h1></td></tr>
-		
-		<tr><td valign=top align=center><b><p><br><br>The league began in September 2012. For the 2017-18 season we have sixteen teams.<p><br>Our season takes place between September and April, with each team playing every other team in home and away fixtures.<p><br>Newcomers are always welcome, whether in the form of new teams or to give their support at the matches.<p><br>Each match lasts 50 minutes and is played somewhere between noon and 3pm on a Sunday.</b></td></tr>
-	</table></div>
+	<div id="pageContent">
+		<table align=center width=80%>
+			<tr>
+				<td align=center valign=top><h1>Welcome to the North-West Yorks Six A Side League Website</h1>
+				</td>
+			</tr>
+			<tr>
+				<td valign=top align=center><b><p><br><br>The league began in September 2012. For the 2017-18 season 
+					we have sixteen teams.<p><br>Our season takes place between September and April, with each team 
+					playing every other team in home and away fixtures.<p><br>Newcomers are always welcome, whether 
+					in the form of new teams or to give their support at the matches.<p><br>Each match lasts 50 minutes 
+					and is played somewhere between noon and 3pm on a Sunday.</b>
+				</td>
+			</tr>
+		</table>
+	</div>
 	<?php include_once("template_footer.php");?>
 </div>
 </body>
